@@ -1,9 +1,16 @@
-/*NAV BAR*/
+/*GENERAL BEGIN*/
+body {
+    height: 100%;
+    width: 100%
+}
+/*GENERAL END*/
 
-.navigation {
+/*NAVBAR BEGIN*/
+
+nav ul {
     list-style: none;
     margin: 0;
-    padding-top: 10px;
+    padding: 10px 0;
 
     background: deepskyblue;
 
@@ -14,42 +21,60 @@
     display: flex;
 
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
-/*
 
-.navigation li ul{
+title {
+    text-align: center;
+}
+
+nav ul li ul {
     display: none;
 }
 
-.navigation li ul li:hover{
-    display: block;
+nav ul li:hover ul {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin: 10px;
 }
-*/
 
-.navigation a {
+nav a {
     text-decoration: none;
     display: block;
     padding: 1em;
     color: white;
 }
 
-.navigation a:hover {
+nav a:hover {
     background: #00b7f5;
     text-decoration: underline;
 }
+/*NAVBAR END*/
 
-@media all and (max-width: 800px) {
-    .navigation {
-        justify-content: space-around;
-    }
+/*MAIN BEGIN*/
+main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
 }
+/*MAIN END*/
+
+/*FOOTER BEGIN*/
+footer {
+    background: blue;
+}
+/*FOOTER END*/
 
 @media all and (max-width: 600px) {
     .navigation {
         -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        padding: 0;
+        flex-flow: column wrap; 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1);
     }
 
     .navigation a { 
