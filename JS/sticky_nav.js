@@ -2,7 +2,7 @@ $(document).ready( function () {
 	
 	/* detect window scroll events */	
 	$(window).scroll(function (){
-		$heightOfHeader = 84;
+		$heightOfHeader = 87;
 		if($(window).scrollTop() <= $heightOfHeader) {
 			
 			$("nav").css("position", "static");

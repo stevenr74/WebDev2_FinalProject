@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+	<title>Comp 1950 | lecture three: CSS techniques</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    
+    <link href="CSS/reset.css" rel="stylesheet" title="standard">
+    <link href="CSS/style.css" rel="stylesheet" title="standard">
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JS/sticky_nav.js"></script>
+
+    <!--[if lt IE 9]>
+	   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+</head>
+<body>
+<!--Header Start-->
+	<header>
+        
+        <div id="banner">
+            <a href="http://bcitcomp.ca/1950"><img src="images/top.jpg" alt="banner"/></a>
+        </div>
+        
+<!--Nav Start-->
+        <nav>
+            <ul class="navbar">
+                
+				<li class="dropdown">
+					<ul>
+                        <li class="dropbtn">HTML 2 - Lectures</li>
+                        <li class="dropdown-content">
+                            <a href="http://bcitcomp.ca/1950/lectures/">01 | Tools &amp; Standards</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/two/">02 | HTML5</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/three/">03 | CSS Techniques</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/four/">04 | CSS Layouts</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/five/">05 | Responsive CSS</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/six/">06 | CSS3</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/seven/">07 | JavaScript Frameworks</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/eight/">08 | Dynamic Content</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/nine/">09 | Templating, SEO</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/ten/">10 | Methodology</a>
+                            <a href="http://bcitcomp.ca/1950/lectures/eleven/">11 | Project Work</a>
+                        </li>
+					</ul>
+				</li>
+                
+				<li class="dropdown">
+					<ul>
+                        <li class="dropbtn">BCIT</li>
+                        <li class="dropdown-content">
+                            <a href="http://bcitcomp.ca/students/">Students on bcitcomp.ca</a>
+                            <a href="http://my.bcit.ca/">My BCIT - my.bcit</a>
+                            <a href="http://www.bcit.ca/">BCIT Homepage</a>
+                            <a href="http://www.bcit.ca/cas/computing/">BCIT: Computing</a>
+                        </li>
+					</ul>
+				</li>
+                
+				<li class="dropdown">
+					<ul>
+                        <li class="dropbtn">About</li>
+                        <li class="dropdown-content">
+                            <a href="http://bcitcomp.ca/1950">Home</a>	
+                            <a href="http://bcitcomp.ca/1950/courseinfo/">About the Course</a>
+                            <a href="http://bcitcomp.ca/1950/resources/">Resources</a>
+                            <a href="#">Contact Instructor</a>
+                        </li>
+					</ul>
+				</li>
+                
+                <li><a href="sitemap.html">Site Map</a></li>
+                
+            </ul>
+		</nav>
+<!--Nav End-->
+	</header>
+<!--Header End-->
+    
+<!--Main Start-->
+	<main>
+        <section>
+
+            <article>
+                <h1>Agenda</h1>
+                
+                <ul>
+                    <li>Quiz #2</li>
+                    <li>Stylesheet Management</li>
+                    <li>Simplifying CSS</li>
+                    <li>Advanced selectors</li>
+                    <li>Rule specificity</li>
+                </ul>
+            </article>
+
+            <article>
+                <h1>@import Method: Managing Multiple CSS Files</h1>
+                
+                <p>The <span class="blueText">@import</span> directive can be used embedded or externally to easily manage the loading of stylesheets</p>
+                
+                <h2>Embedded Example:</h2>
+                
+                <p>Embedding the <span class="blueText">@import</span> works well when dealing with older browsers, as they don't read the command. Simply reference a stylesheet that imports another sheet, so you protect yourself from older browsers. Should also be used in conjunction with an older-style page (lo-fi) for older browsers.</p>
+                
+                <p>In your document, use the following within the <span class="blueText">&#60;head&#62;</span> tag:</p>
+                
+                <div class="blueText">
+                <p>&#60;link rel="stylesheet" type="text/css" href="/css/basic_styles.css" media="all" /&#62;</p>
+                
+                <p>&#60;style type="text/css" media="all">></p>
+                
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@import url("/css/rich_styles.css")</p>
+                
+                <p> class="blueText">&#60;/style&#62;</p>
+                    
+                </div>
+            </article>
+
+        </section>
+	</main>
+<!--Main End-->
+    
+<!--Footer Start-->
+	<footer>
+        <a href="#">Site Map</a>
+    </footer>
+<!--Footer End-->
+    
+</body>
+</html>

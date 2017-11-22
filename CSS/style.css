@@ -6,11 +6,14 @@ body {
 /*GENERAL END*/
 
 /*HEADER BEGIN*/
+header {
+    height: 131px;
+}
+
 #banner {
     margin: 0;
     padding: 0;
-    padding-bottom: 84px;
-    background: url(/images/background_top.jpg) no-repeat #803637;
+    background: #803637;
 }
 /*HEADER END*/
 
@@ -83,7 +86,48 @@ nav {
 main {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: white;
+    margin-top: 20px;
+}
+
+main *{
+    color: black;
+    background: #f0f0f0;
+}
+
+main h1 {
+    background: #ddd;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main h2 {
+    font-weight: bold;
+    padding: 10px;
+}
+
+main section {
+    width: 60%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+article {
+    background: rgba(0, 191, 255, 0.4);
+}
+
+article ul {
+    margin: 10px;
+}
+
+article li{
+    list-style-type: disc;
+    margin: 0 40px;
+}
+
+.blueText {
+    color: dodgerblue;
 }
 /*MAIN END*/
 
